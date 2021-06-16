@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: silver;
+}
+.container{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: 180px;
+	border-radius: 3px;
+	box-shadow: 0 1px 35px silver;
+}
+.container span{
+	position: absolute;
+	top: 0;
+	left: 5px;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	box-shadow: 0 1px 20px #777;
+	transition: 2s;
+}
+.btn{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px 26px;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.btn:hover{
+	background: #555;
+	color: #fff;
+	transition: 0.4s;
+}
+.container span.move{
+	position: absolute;
+	top: 0;
+	left: 85%;
+	transition: 2s;
+	background: tomato;
+}
+
+@media (max-width: 1025px)
+{
+	.container span.move{
+		left: 77.8%;
+	}
+	.btn{
+		top: 58%;
+	}
+}
+
+@media (max-width: 769px)
+{
+	.container span.move{
+		left: 70%;
+	}
+}
+
+@media (max-width: 415px)
+{
+	.container span.move{
+		left: 45%;
+	}
+}
+
+@media (max-width: 415px)
+{
+	.container{
+		top: 44%;
+		left: 50%;
+		width: 190px;
+		height: 80vh;
+	}
+	.btn{
+		top: 95%;
+	}
+	.container span.move{
+		top: 66%;
+		left: 5px;
+	}
+}
+@media (max-width: 361px)
+{
+	.container span.move{
+		top: 64%;
+	}
+}
